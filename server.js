@@ -6,6 +6,14 @@
 
  app = express();
  port = process.env.PORT || 5000;
+
+ app.use(function(req, res, next){
+  if(req.headers['x-forwarded-proto'] === 'http'){
+    next();
+  }else{
+    res.redirect('http://' + req.hostname + req.url);
+  }
+});
 //Connecting database
  app.use(function(req, res, next) {
 
