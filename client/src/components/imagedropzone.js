@@ -10,17 +10,17 @@ class ImageUploadDropzone extends Component{
 			console.log('uploadFile:')
 			const image = files[0]
 
-			const cloudName = 'dxk0bmtei'
+			const cloudName = '******'
 			const url = 'https://api.cloudinary.com/v1_1/'+cloudName+'/image/upload'
 
 			const timestamp = Date.now()/1000
-			const uploadPreset = 'toh6r3p2'
+			const uploadPreset = '******'
 
-			const paramsStr = 'timestamp='+timestamp+'&upload_preset='+uploadPreset+'U8W4mHcSxhKNRJ2_nT5Oz36T6BI'
+			const paramsStr = 'timestamp='+timestamp+'&upload_preset='+uploadPreset+'*****************'
 
 			const signature = sha1(paramsStr)
 			const params = {
-				'api_key':'878178936665133',
+				'api_key':'****************************',
 				'timestamp':timestamp,
 				'upload_preset':uploadPreset,
 				'signature':signature
