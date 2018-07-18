@@ -13,6 +13,9 @@
     "express": "^4.16.2",
     "mongoose": "*",
     "mongoose-unique-validator": "~0.4.1",
+    "react-dropzone": "^4.2.13",
+    "sha1": "^1.1.1",
+    "superagent": "^3.8.3",
     "util": "^0.11.0"
   },
   "devDependencies": {

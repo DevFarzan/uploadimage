@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ImageUpload from './components/imageupload'
+import ImageUploadDropzone from './components/imagedropzone';
 class App extends Component {
-  
+
 
 
   state = {
@@ -35,6 +36,7 @@ class App extends Component {
         </header>
         <p className="App-intro">{this.state.response}</p>
         <ImageUpload/>
+        <ImageUploadDropzone/>
       </div>
     );
   }
